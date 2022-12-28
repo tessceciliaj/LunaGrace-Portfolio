@@ -1,0 +1,45 @@
+:root {
+    --accent-color: rgb(97, 0, 223);
+    --dark-color: #0d0c0f;
+    --medium-color: rgb(16, 14, 19);
+    --light-color: rgb(244, 245, 245);
+  }
+
+.about-container {
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 10%;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 3rem;
+    padding-bottom: 3%;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.headshot {
+    width: 30%;
+    transition: 1s;
+    
+}
+
+.headshot:hover {
+    scale: 1.1;
+}
+
+.info-container {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+}

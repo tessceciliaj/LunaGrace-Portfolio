@@ -1,11 +1,12 @@
 :root {
   --accent-color: rgb(97, 0, 223);
   --dark-color: #0d0c0f;
-  --medium-color: rgb(19, 17, 22);
+  --medium-color: rgb(16, 14, 19);
   --light-color: rgb(244, 245, 245);
 }
 
 * {
+    background-color: var(--dark-color);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,14 +16,6 @@
 section {
     border: 1px solid rgb(0, 0, 0);
     color: var(--light-color);
-    height: 500px;
-}
-
-.hero {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    font-family: futura;
-    font-size: 2rem;
     height: 100vh;
 }
 
@@ -47,17 +40,17 @@ li {
 
 li:hover {
     color: var(--accent-color);
-    text-shadow: 0 0 5px var(--accent-color);
     cursor: pointer;
+    text-shadow: 0 0 5px var(--accent-color);
 }
 
-.logo {
-    height: 90px;
+a {
+    text-decoration: none;
+    color: var(--light-color);
 }
 
-.header-text {
-   top: 25%;
-   position: relative; 
+p {
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -66,8 +59,37 @@ h1 {
     transition: 1s;
 }
 
+h3 {
+    font-size: 2.3rem;
+    font-family: futura;
+}
+
+.hero {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: futura;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+.logo {
+    height: 90px;
+    position: fixed;
+    transition: 0.7s;
+    z-index: 10;
+}
+
+.logo:hover {
+    scale: 1.3;
+}
+
+.header-text {
+    position: relative; 
+    top: 25%;
+}
+
 h1:hover {
-    text-shadow: 0 0 10px var(--light-color);
+    text-shadow: 0 0 5px var(--accent-color);
 }
 
 .header-text p {
@@ -82,7 +104,7 @@ h1:hover {
     font-size: 1.1rem;
     font-weight: 700;
     height: 1.8rem;
-    left: 45%;
+    left: 46%;
     margin-top: 16px;
     text-align: center;
     transition: 0.5s;
@@ -92,32 +114,49 @@ h1:hover {
 }
 
 .btn:hover {
-    scale: 1.05;
     box-shadow: 0 0 10px 0 var(--accent-color);
     cursor: pointer;
+    scale: 1.05;
 }
 
 .socials {
     color: var(--light-color);
-    right: 38%;
-    top: 145px;
     position: relative;
+    top: 180px;
 }
 
-img {
-    height: 50px;
+.socials-icon {
+    height: 40px;
 }
 
-.sub-section {
-    background-color: var(--medium-color);
+.work-together-section {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+    
 }
 
+.lines-image {
+    width: 40%;
+}
+
+
+
+.work-together-div p {
+    font-size: 1rem;
+    padding: 3%;
+}
+
+.btn-collaborate {
+    width: 20%;
+    left: 38%;
+    font-family: futura;
+}
 
 footer {
     background-color: var(--dark-color);
-    height: 500px;
+    height: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -140,5 +179,22 @@ footer {
 
     .socials {
         right: 0;
+    }
+    
+    .sub-section {
+        flex-direction: column;
+    }
+    
+   
+}
+
+@media only screen and (min-width: 1300px) {
+   
+    .btn {
+        left: 47.5%;
+    }
+    
+    .socials {
+        padding-top: 260px;
     }
 }
