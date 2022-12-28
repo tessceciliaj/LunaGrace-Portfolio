@@ -1,0 +1,144 @@
+:root {
+  --accent-color: rgb(97, 0, 223);
+  --dark-color: #0d0c0f;
+  --medium-color: rgb(19, 17, 22);
+  --light-color: rgb(244, 245, 245);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section {
+    border: 1px solid rgb(0, 0, 0);
+    color: var(--light-color);
+    height: 500px;
+}
+
+.hero {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: futura;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    list-style: none;
+    width: 40%;
+}
+
+li {
+    margin-top: 32px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+    cursor: pointer;
+}
+
+.logo {
+    height: 90px;
+}
+
+.header-text {
+   top: 25%;
+   position: relative; 
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 4rem;
+    transition: 1s;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px var(--light-color);
+}
+
+.header-text p {
+    font-weight: 300;
+}
+
+.btn {
+    background-color: var(--dark-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 40px;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 1.8rem;
+    left: 45%;
+    margin-top: 16px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 2px;
+    position: relative;
+    width: 6rem;
+}
+
+.btn:hover {
+    scale: 1.05;
+    box-shadow: 0 0 10px 0 var(--accent-color);
+    cursor: pointer;
+}
+
+.socials {
+    color: var(--light-color);
+    right: 38%;
+    top: 145px;
+    position: relative;
+}
+
+img {
+    height: 50px;
+}
+
+.sub-section {
+    background-color: var(--medium-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer {
+    background-color: var(--dark-color);
+    height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        width: 80%;
+        margin-top: 8px;
+    }
+    
+    li {
+        font-size: 1rem;
+    }
+
+    .btn {
+        left: 37%;
+    }
+    
+    .header-text {
+        margin: 4px;
+    }
+
+    .socials {
+        right: 0;
+    }
+}

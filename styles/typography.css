@@ -1,0 +1,36 @@
+@font-face {
+    font-family: futura;
+    font-weight: 400;
+    src: url('../Fonts/Futura/futura_regular.woff') format('woff'),
+         url('../Fonts/Futura/futura_regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: futura;
+    font-weight: 700;
+    src: url('../Fonts/Futura/futura_bold.woff') format('woff'),
+         url('../Fonts/Futura/futura_bold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: futura;
+    font-weight: 300;
+    src: url('../Fonts/Futura/futura_light.woff') format('woff'),
+         url('../Fonts/Futura/futura_light.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: caslon;
+    font-weight: 400;
+    src: url('../Fonts/Caslon/acaslonpro-regular.woff') format('woff'),
+         url('../Fonts/Caslon/acaslonpro-regular.woff') format('woff2');
+  }
+  
+  @font-face {
+    font-family: caslon;
+    font-weight: 700;
+    src: url('../Fonts/Caslon/acaslonpro-bold.woff') format('woff'),
+         url('../Fonts/Caslon/acaslonpro-bold.woff2') format('woff2');
+  }
+  
+  
