@@ -5,6 +5,19 @@
     --light-color: rgb(244, 245, 245);
   }
 
+  .back-to-home {
+    font-size: 0.8rem;
+    top: 40px;
+    right: 215px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+  }
+
+  .back-to-home::before {
+    content: '\2190';
+  }
+
 .about-container {
     align-items: center;
     display: flex;
@@ -16,10 +29,6 @@ h2 {
     color: var(--accent-color);
     font-size: 3rem;
     padding-bottom: 3%;
-}
-
-p {
-    font-size: 1.5rem;
 }
 
 .headshot {

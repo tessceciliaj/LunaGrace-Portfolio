@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna Grace Portfolio</title>
+    <link rel="stylesheet" href="/styles/qc.slider.css">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/typography.css">
+    <script src="/js/jquery-3.6.2.min.js" defer></script>
     <script src="/js/portfolio.js" defer></script>
+    <script src="/js/qcslider.jquery.js" defer></script>
 </head>
 <body>
     <section class="hero">
@@ -39,5 +42,54 @@
         </div>
        <img class="lines-image" src="/img/purpleLines.png" alt="">
     </section>
+    <section class="slide">
+        <div class="What-I-Like">
+            <h3>What I Like</h3>
+            <p>Creating, both in logical and artistic ways. I use P5.JS to turn code into art,
+                 AI-tools to extend my imagination &
+                 <br>HTML, CSS and Javascript to build webpages.
+                 Read About my journey in <a class="page-link" href="/html/about.html">About me.</a>
+            </p>
+        
+        </div>
+          <div class="slider-container">
+            <ul class="slider-wrapper" id="slider">
+              <li class="slide-current">
+                <img src="/img/galaxy.png"/>
+                <div class="capa">AI Galaxy</div>
+              </li>
+              <li class="slide">
+                <!-- Image -->
+                <img src="./img/luna_logo.png" alt="Luna Grace Logo" />
+                <!-- Image Description -->
+                <div class="capa">Luna Grace Logo</div>
+              </li>
+              <li class="slide">
+                <!-- Image -->
+                <img src="./img/rainy-p5JS.png" alt="P5.JS Squares" />
+                <!-- Image Description -->
+                <div class="capa">P5.JS Rainy mountains</div>
+              </li>
+              <li class="slide">
+                <!-- Image -->
+                <img src="./img/lines1.png" alt="P5.JS Lines" />
+                <!-- Image Description -->
+                <div class="capa">P5.JS Lines</div>
+              </li>
+              <li class="slide">
+                <!-- Image -->
+                <img src="./img/Picture-of-me.png" alt="Picture Of Me" />
+                <!-- Image Description -->
+                <div class="capa">Picture Of Me</div>
+              </li>
+            </ul>
+            <!-- Nav controls -->
+            <div class="drt-control control-left" id="lft-control"><</div>
+            <div class="drt-control control-right" id="rht-control">></div>
+            <ul class="slider-controls" id="slider-controls"></ul>
+            <!-- Progressbar -->
+            <div class="tempo-bar" id="barra"></div>
+          </div>
+        </section>
 </body>
 </html>
