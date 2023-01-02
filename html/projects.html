@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,60 +9,117 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/projects.css">
     <link rel="stylesheet" href="/styles/typography.css">
-    <script src="/js/portfolio.js" defer></script>
+    <script src="/js/projects.js" defer></script>
 </head>
+
 <body>
     <section class="hero">
         <nav>
-            <a href="/index.html"><img class="logo" src="/img/luna_logo.png" alt="Luna Grace's Logo"/></a>
+            <a href="/index.html"><img class="logo" src="/img/luna_logo.png" alt="Luna Grace's Logo" /></a>
+            <p class="back-to-home"> I'll lead you back home!</p>
             <ul>
-                <a href="/html/about.html"><li>About me</li></a>
-                <a href="/html/projects.html"><li>Projects</li></a>
-                <a href="/html/contact.html"><li>Contact</li></a>
+                <a href="/html/about.html">
+                    <li>About me</li>
+                </a>
+                <a href="/html/projects.html">
+                    <li id="current-page">Projects</li>
+                </a>
+                <a href="/html/contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
         </nav>
-         <h2>My work</h2>
-    </section> 
+        <div class="hidden">
+        <h2>My work</h2>
+        <p>Welcome to explore my web development and AI-art journey.</p>
+        </div>
+        <div class="btn-container">
+            <a href="#frontend"><div class="btn">Frontend</div></a>
+            <a href="#creative"><div class="btn" >Creative</div></a>
+        </div>
+    </section>
     <main>
-        <div class="project-container">
+        <section class="frontend-container">
+        <h3 id="frontend">Frontend Projects</h3>
+        <div class="project-container container hidden">
+            
             <div class="project-card">
-                <img src="/img/project1-moblie.png" alt="">
-                <h3>Project One</h3>
-                <p class="subtext">This is my project and some text about it.</p>
-                <hr/>
+                <img src="/img/tea_cozy.png" alt="">
+                <h3>The Tea Cozy</h3>
+                <p class="subtext">This webpage is a codecademy project.</p>
+                <hr />
                 <p class="subtext">View here</p>
             </div>
             <div class="project-card">
-                <img src="/img/creative space tarot.png" alt="">
-                <h3>Project Two</h3>
-                <p class="subtext">This is my project and some text about it.</p>
-                <hr/>
+                <img src="/img/crative_space_project.png" alt="">
+                <h3>Creative Space</h3>
+                <p class="subtext">My first website. A responsive multipage website full of creativity.</p>
+                <hr />
                 <p class="subtext">View here</p>
             </div>
             <div class="project-card">
-                <img src="/img/project1.png" alt="">
-                <h3>Project Three</h3>
-                <p class="subtext">This is my project and some text about it.</p>
-                <hr/>
+                <img src="/img/frontend_quiz.png" alt="">
+                <h3>Wed developer Quiz</h3>
+                <p class="subtext">A quiz for web developers to enhance my Javascript skills further.</p>
+                <hr />
                 <p class="subtext">View here</p>
             </div>
             <div class="project-card">
                 <img src="/img/project2.png" alt="">
                 <h3>Project Four</h3>
                 <p class="subtext">This is my project and some text about it.</p>
-                <hr/>
+                <hr />
                 <p class="subtext">View here</p>
             </div>
         </div>
         </div>
+    </section>
+    <section class="creative-container">
+        <h3 id="creative">Creative Projects</h3>
+        <div class="project-container container hidden">
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Lorem Ipsum</h3>
+                <p class="subtext">This webpage is a codecademy project.</p>
+                <hr />
+                <p class="subtext">View here</p>
+            </div>
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Creative Space</h3>
+                <p class="subtext">My first website. A responsive multipage website full of creativity.</p>
+                <hr />
+                <p class="subtext">View here</p>
+            </div>
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Wed developer Quiz</h3>
+                <p class="subtext">A quiz for web developers to enhance my Javascript skills further.</p>
+                <hr />
+                <p class="subtext">View here</p>
+            </div>
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Project Four</h3>
+                <p class="subtext">This is my project and some text about it.</p>
+                <hr />
+                <p class="subtext">View here</p>
+            </div>
+        </div>
+        </div>
+    </section>
     </main>
-    <footer> 
+    <footer>
         <div class="socials">
-          <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon" src="/img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>
-          <a target="_blank" href="https://www.linkedin.com/in/therese-johansson-140a221a1/"><img class="socials-icon" src="/img/LinkedIn-Icon-White-Logo.wine.png" alt=""></a>
-          <a target="_blank" href="https://github.com/Theresececilia"><img class="socials-icon" src="/img/GitHub-Icon-White-Logo.wine.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon"
+                    src="/img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/in/therese-johansson-140a221a1/"><img class="socials-icon"
+                    src="/img/LinkedIn-Icon-White-Logo.wine.png" alt=""></a>
+            <a target="_blank" href="https://github.com/Theresececilia"><img class="socials-icon"
+                    src="/img/GitHub-Icon-White-Logo.wine.png" alt=""></a>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

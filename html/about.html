@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/typography.css">
     <link rel="stylesheet" href="../styles/about.css">
-    <script src="/js/portfolio.js" defer></script>
+    <script src="/js/about.js" defer></script>
 </head>
 <body>
     <section class="hero">
@@ -16,13 +16,13 @@
             <a href="/index.html"><img class="logo" src="/img/luna_logo.png" alt="Luna Grace's Logo"/></a>
             <p class="back-to-home"> I'll lead you back home!</p>
             <ul>
-                <a href="/html/about.html"><li>About me</li></a>
+                <a href="/html/about.html"><li id="current-page">About me</li></a>
                 <a href="/html/projects.html"><li>Projects</li></a>
                 <a href="/html/contact.html"><li>Contact</li></a>
             </ul>
         </nav>
-        <div class="about-container">
-        <div class="info-container">
+        <div class="about-container container">
+        <div class="info-container hidden">
             <h2>About Me</h2>
             <p>Hi, i'm Therese! I'm a Frontend Developer under the name of Luna Grace.
                 <br>Currently located in Stockholm, Sweden.
@@ -31,11 +31,13 @@
         <img class="headshot" src="/img/Picture-of-me.png" alt="Picture of me.">
     </div>
     </section>
-    <section class="skills-section">
-        <div class="skills-div">
+    <section class="skills-section container">
+        <div class="skills-div hidden">
             <h3>My Journey</h3>
-                <p>In January 2022 I found codecademy. Outside of my full-time job I studied Math, HTML, CSS and Javascript. </p>
-            <div class="btn btn-collaborate">Browse Projects</div>  
+                <p>In January 2022 I found codecademy. Outside of my full-time job I studied Math, HTML, CSS and Javascript. 
+                    <br>In September 2023 I joined the Frontend developer program on <a href="https://cmeducations.se" class="page-link" target="_blank">Changemaker educations.</a> 
+                </p>
+            <a href="/html/projects.html"><div class="btn btn-collaborate">Projects</div></a> 
         </div>
        <img class="lines-image" src="/img/lines1.png" alt="">
     </section>

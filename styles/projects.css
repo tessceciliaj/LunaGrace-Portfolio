@@ -3,7 +3,14 @@
     --dark-color: #0d0c0f;
     --medium-color: rgb(16, 14, 19);
     --light-color: rgb(244, 245, 245);
-  }
+}
+
+.btn-container {
+    display: flex;
+    width: 92%;
+    justify-content: center;
+    gap: 20px;
+}
 
 .project-card {
     box-shadow: 0 0 5px 0 var(--accent-color);
@@ -20,10 +27,9 @@
 }
 
 .project-card img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .project-container {
@@ -42,14 +48,14 @@ p {
     color: var(--light-color);
 }
 
-h3 {
-    color: var(--light-color);
-}
-
 h2 {
     color: var(--accent-color);
     font-size: 3rem;
     padding-top: 15%;
+}
+
+h3 {
+    padding: 2%;
 }
 
 hr {
@@ -59,4 +65,16 @@ hr {
 
 main {
     background-color: var(--dark-color);
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    .btn-container {
+        position: relative;
+        left: 1.5%;
+    }
 }
