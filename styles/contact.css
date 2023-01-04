@@ -1,0 +1,63 @@
+:root {
+    --accent-color: rgb(97, 0, 223);
+    --dark-color: #0d0c0f;
+    --medium-color: rgb(16, 14, 19);
+    --light-color: rgb(244, 245, 245);
+    --color-opacity: rgba(97, 0, 223, 0.1);
+}
+
+.container {
+    align-items: center;
+    background: var(--dark-color);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    background-color: var(--dark-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    max-width: 600px;
+    padding: 2vw 4vw;
+    width: 90%;
+}
+
+form h3 {
+    color: var(--accent-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    background: var(--color-opacity); 
+    border: 0.5px solid var(--accent-color);
+    color: var(--light-color);
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+}
+
+form button {
+    background: var(--color-opacity);
+    border: 0.5px solid var(--accent-color);
+    border-radius: 30px;
+    color: var(--light-color);
+    font-size: 18px;
+    margin: 20px auto 0;
+    outline: none;
+    padding: 8px;
+    transition: 0.5s;
+    width: 25%;
+}
+
+form button:hover {
+    box-shadow: 0 0 10px 0 var(--accent-color);
+    cursor: pointer;
+    scale: 1.05;
+}

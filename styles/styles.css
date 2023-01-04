@@ -24,7 +24,6 @@ html {
 section {
     border: 1px solid rgb(0, 0, 0);
     color: var(--light-color);
-    height: 100vh;
 }
 
 nav {
@@ -73,6 +72,10 @@ h3 {
 p {
     background-color: transparent;
     font-size: 1rem;
+    padding: 2%;
+}
+
+.container {
     padding: 2%;
 }
 
