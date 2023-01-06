@@ -11,12 +11,7 @@ body {
     justify-content: center;
 }
 
-.btn-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    width: 92%;
-}
+
 
 p {
     color: var(--light-color);
@@ -33,14 +28,28 @@ h1 {
 
 h2 {
     color: var(--accent-color);
+    font-family: futura;
     font-size: 2rem;
-    margin: 2%;
+    margin-bottom: 2%;
 }
 
 h3 {
     background: transparent;
+    font-family: futura;
     font-size: 1.5rem;
-    padding-top: 15%;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.container {
+    padding: 5%;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 92%;
 }
 
 #cards{
@@ -105,10 +114,14 @@ border-radius: inherit;
  z-index: 2;
 }
 
+.frontend-container {
+    height: 100vh;
+}
+
 .container img {
     border-radius: 10px;
-   height: 235px;
-   width: 250px; 
+   height: 255px;
+   width: 290px; 
 }
 
 hr {
@@ -116,14 +129,40 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-    
+    .btn-container {
+        width: 80%;
+    }
+
+    h2 {
+        margin: 5%;
+    }
+
+    .card {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .card-frontend{
+        margin-bottom: 180px;
+    }
+    .frontend-container {
+        height: 220vh;
+    }
+
+    .front-projects {
+        position: relative;
+        top: 12%;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
     
     .btn-container {
         position: relative;
-        left: 1.5%;
+        right: 1.5%;
     }
+
+    
+    
 
 }

@@ -3,27 +3,23 @@ $(function () {
     duration: 5000
   });
  
-  $('div.toshow').fadeIn(2500);
+  $('div.toshow').fadeIn(3500);
 
 });
 
-function setup() {
-  let cnv = createCanvas(350, 350);
-  let x = (windowWidth - width) / 2;
-  let y = (windowHeight - height) / 2;
-  cnv.position( x, y);
-}
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-function draw() {
-  stroke(93, 0, 233);
-  c = color('rgba(93, 0, 223, 0.03)');
-  fill(c);
-  background('#0d0c0f')
-  rectMode(CENTER);
-  translate(width / 2, height / 2);
-  rotate(frameCount * 0.01);
-  square(0, 0, 380);
-}
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n =>
+  n.addEventListener("click", () => {
+    hamburger.remove("active");
+    navMenu.remove("active");
+  }))
 
 
 const observer = new IntersectionObserver((entries) => {
@@ -39,5 +35,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+
 
 

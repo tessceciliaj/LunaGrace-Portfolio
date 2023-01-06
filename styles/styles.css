@@ -3,6 +3,7 @@
     --dark-color: #0d0c0f;
     --medium-color: rgb(16, 14, 19);
     --light-color: rgb(244, 245, 245);
+    --color-opacity: rgba(97, 0, 223, 0.1);
     --opacity-slide: 0.5;
     --height-slider: 500px;
     --color-slider: rgba(123, 0, 223, 0.6);
@@ -39,12 +40,6 @@ ul {
     width: 40%;
 }
 
-li {
-    margin-top: 32px;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
 li:hover {
     color: var(--accent-color);
     cursor: pointer;
@@ -75,8 +70,29 @@ p {
     padding: 2%;
 }
 
-.container {
-    padding: 2%;
+.nav-link {
+    margin-top: 32px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-menu {
+    left: 16%;
+    position: relative;
+}
+
+.nav-menu-front {
+    left: 30%;
+}
+
+.bar {
+    background-color: var(--accent-color);
+    display: none;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    width: 25px;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #current-page {
@@ -86,16 +102,15 @@ p {
 .back-to-home {
     font-size: 0.8rem;
     top: 40px;
-    right: 215px;
+    right: 90px;
     padding: 0;
     position: relative;
-    z-index: 20;
+    z-index: 55;
 }
 
 .back-to-home::before {
     content: '\2190';
 }
-
 
 .hero {
     background-color: var(--dark-color);
@@ -109,7 +124,7 @@ p {
     height: 90px;
     position: fixed;
     transition: 0.7s;
-    z-index: 1;
+    z-index: 99;
 }
 
 .logo:hover {
@@ -119,7 +134,7 @@ p {
 .header-text {
     background-color: transparent;
     position: relative;
-    top: 25%;
+    top: 26%;
     z-index: 10;
 }
 
@@ -159,7 +174,7 @@ h1:hover {
 .socials {
     color: var(--light-color);
     position: relative;
-    top: 140px;
+    top: 180px;
 }
 
 .socials-icon {
@@ -167,10 +182,14 @@ h1:hover {
 }
 
 .work-together-section {
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 10%;
+}
+
+.work-together-div {
+    margin: 10% 0;
 }
 
 .lines-image {
@@ -251,7 +270,7 @@ section.slide .slider-container .slider-wrapper li .capa {
 }
 
 .toshow {
- display: none;
+    display: none;
 }
 
 @media(prefers-reduced-motion) {
@@ -261,25 +280,62 @@ section.slide .slider-container .slider-wrapper li .capa {
 }
 
 @media screen and (max-width: 768px) {
-    ul {
-        width: 45%;
-        margin-top: 8px;
+    .nav-menu {
+        border-bottom: 1px solid rgba(97, 0, 223, 0.1);
+        flex-direction: column;
+        gap: 0;
+        left: -100%;
+        position: fixed;
+        top: 70px;
+        transition: 0.3s;
+        width: 100%;
+        z-index: 40;
     }
 
-    #current-page {
-        display: none;
-    }
-
-    li {
+    .nav-link {
         font-size: 1rem;
+        margin: 16px 0;
+        left: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    nav {
+        margin: 10px;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hamburger {
+        position: relative;
+        right: 5px;
+        top: 5px;
     }
 
     .back-to-home {
-        right: 20px;
+        display: none;
     }
 
     .logo {
-        position: static;
+        bottom: 20px;
+        right: 15px;
+        position: relative;
     }
 
     .btn {
@@ -288,10 +344,12 @@ section.slide .slider-container .slider-wrapper li .capa {
 
     .header-text {
         margin: 4px;
+        top: 20%;
     }
 
     .socials {
         right: 0;
+        top: 220px;
     }
 
     .btn-collaborate {
@@ -312,6 +370,12 @@ section.slide .slider-container .slider-wrapper li .capa {
 
     .container {
         flex-direction: column;
+        
+    }
+
+    .work-together-div {
+        padding: 5%;
+        margin: 20% 0;
     }
 
 

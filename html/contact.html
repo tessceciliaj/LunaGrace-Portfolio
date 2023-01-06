@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/typography.css">
+    <script src="/js/contact.js" defer></script>
 </head>
 <body>
     <section class="hero">
         <nav>
             <a href="/index.html"><img class="logo" src="/img/luna_logo.png" alt="Luna Grace's Logo"/></a>
             <p class="back-to-home"> I'll lead you back home!</p>
-            <ul>
-                <a href="/html/about.html"><li>About me</li></a>
-                <a href="/html/projects.html"><li>Projects</li></a>
-                <a href="/html/contact.html"><li id="current-page">Contact</li></a>
+            <ul class="nav-menu">
+                <a href="/html/about.html"><li class="nav-link">About me</li></a>
+                <a href="/html/projects.html"><li class="nav-link">Projects</li></a>
+                <a href="/html/contact.html"><li id="current-page" class="nav-link">Contact</li></a>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
         </nav>
         <div class="container">
       <form action="mailto: therese@lunagrace.tech" method="post" class="form-section">
@@ -26,7 +32,7 @@
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Email id" required>
                 <input type="text" id="phone" placeholder="Phone no.">
-                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                <textarea id="message" rows="1" placeholder="How can I help you?"></textarea>
                 <button type="submit" >Email Me</button>
             </form>
         </div>

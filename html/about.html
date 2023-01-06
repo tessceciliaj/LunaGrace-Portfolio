@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna Grace Portfolio</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">-->
     <link rel="stylesheet" href="/styles/typography.css">
     <link rel="stylesheet" href="../styles/about.css">
     <script src="/js/about.js" defer></script>
@@ -15,11 +16,16 @@
         <nav>
             <a href="/index.html"><img class="logo" src="/img/luna_logo.png" alt="Luna Grace's Logo"/></a>
             <p class="back-to-home"> I'll lead you back home!</p>
-            <ul>
-                <a href="/html/about.html"><li id="current-page">About me</li></a>
-                <a href="/html/projects.html"><li>Projects</li></a>
-                <a href="/html/contact.html"><li>Contact</li></a>
+            <ul class="nav-menu">
+                <a href="/html/about.html"><li id="current-page" class="nav-link">About me</li></a>
+                <a href="/html/projects.html"><li class="nav-link">Projects</li></a>
+                <a href="/html/contact.html"><li class="nav-link">Contact</li></a>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
         </nav>
         <div class="about-container container">
         <div class="info-container hidden">
@@ -35,12 +41,34 @@
         <div class="skills-div hidden">
             <h3>My Journey</h3>
                 <p>In January 2022 I found codecademy. Outside of my full-time job I studied Math, HTML, CSS and Javascript. 
-                    <br>In September 2023 I joined the Frontend developer program on <a href="https://cmeducations.se" class="page-link" target="_blank">Changemaker educations.</a> 
+                    <br>Since Mars 2022 i've created art with a javascript libary called p5.js.
+                    <br>In September 2023 I joined the Frontend developer program on <a href="https://cmeducations.se" class="page-link" target="_blank">Changemaker educations.</a>
+                    <br> To enhance inspiration and playfullness I also create AI-art in Midjorney. 
                 </p>
-            <a href="/html/projects.html"><div class="btn btn-collaborate">Projects</div></a> 
-        </div>
-       <img class="lines-image" src="/img/lines1.png" alt="">
+        </div>   
+      
     </section>
+     <div class="carousel-container">
+            <div class="slide active">
+                <img src="/img/certificate_css.png" alt="">
+            </div>
+            <div class="slide next">
+                <img src="/img/galaxymama.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/certificate_html.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/queen2.png" alt="">
+            </div>
+            <div class="slide prev">
+                <img src="/img/certificate_javascript.png" alt="">
+            </div>
+            <div class="button-container">
+                <div class="button" id="left"><i class="fas fa-angle-left"></i></div>
+                <div class="button" id="right"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
     <footer>
          <div class="socials">
           <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon" src="/img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>

@@ -17,18 +17,18 @@
         <nav>
             <a href="/index.html"><img class="logo" src="/img/luna_logo.png" alt="Luna Grace's Logo" /></a>
             <p class="back-to-home"> I'll lead you back home!</p>
-            <ul>
-                <a href="/html/about.html">
-                    <li>About me</li>
-                </a>
-                <a href="/html/projects.html">
-                    <li id="current-page">Projects</li>
-                </a>
-                <a href="/html/contact.html">
-                    <li>Contact</li>
-                </a>
+            <ul class="nav-menu">
+                <a href="/html/about.html"><li class="nav-link">About me</li></a>
+                <a href="/html/projects.html"><li id="current-page" class="nav-link">Projects</li></a>
+                <a href="/html/contact.html"><li class="nav-link">Contact</li></a>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
         </nav>
+        <div class="front-projects">
         <div class="hidden">
             <h1>My work</h1>
             <p>Welcome to explore my web development and AI-art journey.</p>
@@ -41,64 +41,15 @@
                 <div class="btn">Creative</div>
             </a>
         </div>
+    </div>
     </section>
-    <main>
-        <section class="frontend-container container">
-            <h2 id="frontend">Frontend Projects</h2>
-            <div id="cards">
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <img src="/img/quiz_frontend.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <img src="../img/creative-space-front.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <img src="/img/cozy-tea-locations.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>Frontend Quiz</h3>
-                        <hr/>
-                        <p class="subtext">A Frontend developer quiz, made with html, css & javascript.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>Creative space</h3>
-                        <hr/>
-                        <p class="subtext">My first responsive multipage website, full of creativity.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>The Tea Cozy</h3>
-                        <hr />
-                        <p class="subtext">I created a frontpage for a cozy tea shop. Thank you codecademy!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="creative-container container">
             <h2 id="creative">Creative Projects</h2>
             <div id="cards">
                 <div class="card">
                     <div class="card-border"></div>
                     <div class="card-content">
-                        <img src="../img/purple_squareverse.png" alt="">
+                        <img src="../img/galaxy.png" alt="">
                     </div>
                 </div>
                 <div class="card">
@@ -133,7 +84,39 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section class="frontend-container container">
+            <h2 id="frontend">Frontend Projects</h2>
+            <div id="cards">
+                <div class="card card-frontend">
+                    <div class="card-border"></div>
+                    <div class="card-content">
+                        <img src="/img/quiz_frontend.png" alt="">
+                       <a href="https://theresececilia.github.io/Frontend-Quiz/" target="_blank"><h3>Frontend Quiz</h3></a>
+                        <hr/>
+                        <p class="subtext">A Frontend developer quiz, made with html, css & javascript.</p>
+                    </div>
+                </div>
+                <div class="card card-frontend">
+                    <div class="card-border"></div>
+                    <div class="card-content">
+                        <img src="../img/creative-space-front.png" alt="">
+                        <a href="https://theresececilia.github.io/Creative-Space/" target="_blank"><h3>Creative space</h3></a> 
+                        <hr/>
+                        <p class="subtext">A playful responsive multipage website, full of creativity.</p>
+                    </div>
+                </div>
+                <div class="card card-frontend">
+                    <div class="card-border"></div>
+                    <div class="card-content">
+                        <img src="/img/cozy-tea-locations.png" alt="">
+                        <a href="https://theresececilia.github.io/TeaCozy-Codecademy/" target="_blank"><h3>The Tea Cozy</h3></a>
+                        <hr />
+                        <p class="subtext">I created a frontpage for a cozy tea shop. Thank you codecademy!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     <footer>
         <div class="socials">
             <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon"

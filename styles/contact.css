@@ -3,7 +3,15 @@
     --dark-color: #0d0c0f;
     --medium-color: rgb(16, 14, 19);
     --light-color: rgb(244, 245, 245);
-    --color-opacity: rgba(97, 0, 223, 0.1);
+    --color-opacity: rgba(97, 0, 223, 0.2);
+}
+
+* {
+    text-align: left;
+}
+
+li {
+    text-align: center;
 }
 
 .container {
@@ -17,7 +25,6 @@
 
 form {
     background-color: var(--dark-color);
-    border: 1px solid var(--accent-color);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -34,13 +41,31 @@ form h3 {
 }
 
 form input, form textarea{
-    background: var(--color-opacity); 
-    border: 0.5px solid var(--accent-color);
+    background: transparent; 
+    border: none;
+    border-bottom: 1px solid var(--color-opacity);
     color: var(--light-color);
     font-size: 16px;
     margin: 10px 0;
     padding: 15px;
     outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--accent-color);
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: var(--light-color) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--dark-color) inset !important;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 form button {
@@ -52,8 +77,9 @@ form button {
     margin: 20px auto 0;
     outline: none;
     padding: 8px;
+    text-align: center;
     transition: 0.5s;
-    width: 25%;
+    width: 100px;
 }
 
 form button:hover {
