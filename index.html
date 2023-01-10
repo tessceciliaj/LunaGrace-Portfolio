@@ -11,6 +11,7 @@
     <script src="js/jquery-3.6.2.min.js" defer></script>
     <script src="js/p5.min.js" defer></script>
     <script src="js/portfolio.js" defer></script>
+    <script src="js/p5-animations.js" defer></script>
     <script src="js/qcslider.jquery.js" defer></script>
 </head>
 <body>
@@ -18,8 +19,20 @@
         <nav>
             <a href="index.html"><img class="logo logo-front show" src="img/luna_logo.png" alt="Luna Grace's Logo"/></a>
             <ul class="nav-menu nav-menu-front">
-                <a href="html/about.html" class="nav-link nav-link-front"><li>About me</li></a>
-                <a href="html/projects.html" class="nav-link nav-link-front"><li>Projects</li></a>
+                <a href="html/about.html" class="nav-link nav-link-front"><li>About me
+                  <ul class="submenu">
+                    <li>Introduction</li>
+                    <li>My Journey</li>
+                  </ul>
+                </li>
+                </li></a>
+                <a href="html/projects.html" class="nav-link nav-link-front"><li>Projects
+                  <ul class="submenu">
+                    <li>Creative</li>
+                    <li>Frontend</li>
+                  </ul>
+                </li>
+                </li></a>
                 <a href="html/contact.html" class="nav-link nav-link-front"><li>Contact</li></a>
             </ul>
             <div class="hamburger hamburger-front">
@@ -28,18 +41,9 @@
               <span class="bar"></span>
             </div>
         </nav>
-        <div class="header-text toshow" id="square-animation">
-          <script>
-            let sketch = function(p) {
-              p.setup = function(){
-                p.createCanvas(100, 100);
-                p.background(0);
-              }
-            };
-            new p5(sketch, 'square-animation');
-            </script>
+        <div class="header-text toshow">
           <h1>Luna Grace</h1>
-        <p>Frontend Developer</p>
+        <p class="my-titlte">Frontend Developer</p>
         <a href="html/projects.html"><div class="btn">My Work</div></a> 
         <div class="socials">
           <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon" src="img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>

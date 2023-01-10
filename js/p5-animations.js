@@ -16,3 +16,7 @@ function draw() {
   rotate(frameCount * 0.01);
   square(0, 0, 200);
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}

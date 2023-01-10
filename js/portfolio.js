@@ -1,9 +1,17 @@
 $(function () {
+  
   $("#slider").QCslider({
     duration: 5000
   });
  
   $('div.toshow').fadeIn(3500);
+
+  $("nav li").on({
+    click: function () {
+      $(this).siblings().find(".submenu").hide();
+      $(this).find(".submenu").toggle();
+    }
+  });
 
 });
 

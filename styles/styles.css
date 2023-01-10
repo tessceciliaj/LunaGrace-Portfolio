@@ -55,6 +55,7 @@ h1 {
     background-color: transparent;
     color: var(--accent-color);
     font-size: 4rem;
+    letter-spacing: 0.1rem;
     transition: 1s;
 }
 
@@ -62,6 +63,13 @@ h3 {
     color: var(--accent-color);
     font-size: 2.3rem;
     font-family: futura;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-weight: 500;
+    letter-spacing: 0.2rem;
 }
 
 p {
@@ -95,6 +103,17 @@ p {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
+.submenu {
+    display: none;
+    flex-direction: column;
+}
+
+.submenu li {
+    margin: 8px 0 0 0;
+    padding: 4px 0;
+    width: 100px;
+}
+
 #current-page {
     color: var(--accent-color);
 }
@@ -102,10 +121,10 @@ p {
 .back-to-home {
     font-size: 0.8rem;
     top: 40px;
-    right: 90px;
+    right: 7%;
     padding: 0;
     position: relative;
-    z-index: 55;
+
 }
 
 .back-to-home::before {
@@ -136,6 +155,10 @@ p {
     position: relative;
     top: 26%;
     z-index: 10;
+}
+
+.header-text p {
+    letter-spacing: 0.4rem;
 }
 
 h1:hover {
@@ -174,7 +197,7 @@ h1:hover {
 .socials {
     color: var(--light-color);
     position: relative;
-    top: 180px;
+    top: 170px;
 }
 
 .socials-icon {
