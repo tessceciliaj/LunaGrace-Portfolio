@@ -297,7 +297,7 @@ section.slide .slider-container .slider-wrapper li .capa {
         flex-direction: column;
         gap: 0;
         left: -100%;
-        position: fixed;
+        position: absolute;
         top: 70px;
         transition: 0.3s;
         width: 100%;
