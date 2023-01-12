@@ -23,7 +23,7 @@ html {
 }
 
 section {
-    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     color: var(--light-color);
 }
 
