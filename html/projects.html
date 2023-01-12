@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/projects.css">
     <link rel="stylesheet" href="../styles/typography.css">
+    <script src="../js/jquery-3.6.2.min.js" defer></script>
     <script src="../js/projects.js" defer></script>
 </head>
 
@@ -16,11 +17,20 @@
     <section class="hero">
         <nav>
             <a href="../index.html"><img class="logo" src="../img/luna_logo.png" alt="Luna Grace's Logo" /></a>
-            <p class="back-to-home"> I'll lead you back home!</p>
-            <ul class="nav-menu">
-                <a href="about.html"><li class="nav-link">About me</li></a>
-                <a href="projects.html"><li id="current-page" class="nav-link">Projects</li></a>
-                <a href="contact.html"><li class="nav-link">Contact</li></a>
+            <ul class="nav-menu nav-menu-front">
+                <li class="top-layer-nav">About me
+                  <ul class="submenu">
+                    <li><a href="../html/about.html">Introduction</a></li>
+                    <li><a href="../html/about.html#journey">My Journey</a></li>
+                  </ul>
+                </li>
+                <li class="top-layer-nav">Projects
+                  <ul class="submenu">
+                    <li><a href="../html/projects.html#creative">Creative</a></li>
+                    <li><a href="../html/projects.html#frontend">Frontend</a></li>
+                  </ul>
+                </li>
+                <li class="top-layer-nav"><a href="../html/contact.html" class="nav-link nav-link-front">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

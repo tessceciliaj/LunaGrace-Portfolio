@@ -40,10 +40,9 @@ ul {
     width: 40%;
 }
 
-li:hover {
-    color: var(--accent-color);
+li {
     cursor: pointer;
-    text-shadow: 0 0 5px var(--accent-color);
+    margin-top: 32px;
 }
 
 a {
@@ -79,9 +78,7 @@ p {
 }
 
 .nav-link {
-    margin-top: 32px;
     text-decoration: none;
-    transition: 0.5s;
 }
 
 .nav-menu {
@@ -106,29 +103,19 @@ p {
 .submenu {
     display: none;
     flex-direction: column;
+    position: absolute;
 }
 
 .submenu li {
     margin: 8px 0 0 0;
     padding: 4px 0;
+    text-align: left;
     width: 100px;
+    z-index: 99;
 }
 
 #current-page {
     color: var(--accent-color);
-}
-
-.back-to-home {
-    font-size: 0.8rem;
-    top: 40px;
-    right: 7%;
-    padding: 0;
-    position: relative;
-
-}
-
-.back-to-home::before {
-    content: '\2190';
 }
 
 .hero {
@@ -303,6 +290,8 @@ section.slide .slider-container .slider-wrapper li .capa {
 }
 
 @media screen and (max-width: 768px) {
+    
+
     .nav-menu {
         border-bottom: 1px solid rgba(97, 0, 223, 0.1);
         flex-direction: column;
@@ -315,10 +304,29 @@ section.slide .slider-container .slider-wrapper li .capa {
         z-index: 40;
     }
 
-    .nav-link {
+    li {
         font-size: 1rem;
-        margin: 16px 0;
-        left: 0;
+        margin: 8px 0;
+        left: 0; 
+    }
+    
+    .top-layer-nav {
+        border-bottom:1px solid rgba(123, 0, 223, 0.5);
+        padding-bottom: 16px;
+    }
+
+    .submenu li {
+        background-color: transparent;
+        left: 105px;
+        margin: 0 auto;
+        padding-top: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .submenu {
+        position: relative;
+        width: 100%;
     }
 
     .nav-menu.active {
@@ -349,10 +357,6 @@ section.slide .slider-container .slider-wrapper li .capa {
         position: relative;
         right: 5px;
         top: 5px;
-    }
-
-    .back-to-home {
-        display: none;
     }
 
     .logo {

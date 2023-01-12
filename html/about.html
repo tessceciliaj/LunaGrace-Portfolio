@@ -9,17 +9,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/typography.css">
     <link rel="stylesheet" href="../styles/about.css">
+    <script src="../js/jquery-3.6.2.min.js" defer></script>
     <script src="../js/about.js" defer></script>
 </head>
 <body>
     <section class="hero">
         <nav>
             <a href="../index.html"><img class="logo" src="../img/luna_logo.png" alt="Luna Grace's Logo"/></a>
-            <p class="back-to-home"> I'll lead you back home!</p>
-            <ul class="nav-menu">
-                <a href="about.html"><li id="current-page" class="nav-link">About me</li></a>
-                <a href="projects.html"><li class="nav-link">Projects</li></a>
-                <a href="contact.html"><li class="nav-link">Contact</li></a>
+            <ul class="nav-menu nav-menu-front">
+                <li class="top-layer-nav">About me
+                  <ul class="submenu">
+                    <li><a href="../html/about.html">Introduction</a></li>
+                    <li><a href="../html/about.html#journey">My Journey</a></li>
+                  </ul>
+                </li>
+                <li class="top-layer-nav">Projects
+                  <ul class="submenu">
+                    <li><a href="../html/projects.html#creative">Creative</a></li>
+                    <li><a href="../html/projects.html#frontend">Frontend</a></li>
+                  </ul>
+                </li>
+                <li class="top-layer-nav"><a href="../html/contact.html" class="nav-link nav-link-front">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -37,7 +47,7 @@
         <img class="headshot" src="../img/Picture-of-me.png" alt="Picture of me.">
     </div>
     </section>
-    <section class="skills-section container">
+    <section class="skills-section container" id="journey">
         <div class="skills-div hidden">
             <h3>My Journey</h3>
                 <p>In January 2022 I found codecademy. Outside of my full-time job I studied Math, HTML, CSS and Javascript. 

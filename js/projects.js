@@ -1,3 +1,14 @@
+$(function () {
+
+  $("nav li").on({
+    click: function () {
+      $(this).siblings().find(".submenu").hide();
+      $(this).find(".submenu").toggle();
+    }
+  });
+
+});
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 

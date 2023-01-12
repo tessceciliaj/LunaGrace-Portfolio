@@ -13,10 +13,17 @@ $(function () {
     }
   });
 
+  $(".submenu li").on({
+    click: function () {
+      $(this).parent().hide()
+    }
+  });
+
 });
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const subMenu = document.querySelector(".submenu");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");

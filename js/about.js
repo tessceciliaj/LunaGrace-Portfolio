@@ -1,3 +1,15 @@
+$(function () {
+
+  $("nav li").on({
+    click: function () {
+      $(this).siblings().find(".submenu").hide();
+      $(this).find(".submenu").toggle();
+    }
+  });
+
+});
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
