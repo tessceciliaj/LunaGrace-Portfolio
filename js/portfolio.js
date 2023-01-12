@@ -13,12 +13,6 @@ $(function () {
     }
   });
 
-  $(".submenu li").on({
-    click: function () {
-      $(this).parent().hide()
-    }
-  });
-
 });
 
 const hamburger = document.querySelector(".hamburger");

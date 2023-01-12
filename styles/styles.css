@@ -164,10 +164,10 @@ h1:hover {
     border-radius: 40px;
     color: var(--accent-color);
     font-size: 1.1rem;
-    font-weight: 700;
+    font-family: futura;
+    font-weight: 600;
     height: 1.8rem;
-    left: 46%;
-    margin-top: 16px;
+    margin: 16px auto;
     text-align: center;
     transition: 0.5s;
     padding: 2px;
@@ -183,8 +183,10 @@ h1:hover {
 
 .socials {
     color: var(--light-color);
-    position: relative;
-    top: 170px;
+    position: absolute;
+    margin: auto;
+    top: 93%;
+    width: 100%;
 }
 
 .socials-icon {
@@ -212,11 +214,6 @@ h1:hover {
     font-size: 1rem;
 }
 
-.btn-collaborate {
-    width: 20%;
-    left: 38%;
-    font-family: futura;
-}
 
 .What-I-Like {
     color: var(--light-color);
@@ -365,22 +362,9 @@ section.slide .slider-container .slider-wrapper li .capa {
         position: relative;
     }
 
-    .btn {
-        left: 37%;
-    }
-
     .header-text {
         margin: 4px;
         top: 20%;
-    }
-
-    .socials {
-        right: 0;
-        top: 220px;
-    }
-
-    .btn-collaborate {
-        width: 30%;
     }
 
     .lines-image {
@@ -410,19 +394,6 @@ section.slide .slider-container .slider-wrapper li .capa {
 
 @media only screen and (min-width: 1300px) {
 
-    .btn {
-        left: 47.5%;
-    }
+  
 
-    .btn-collaborate {
-        left: 40%;
-    }
-
-    .back-to-home {
-        right: 21%;
-    }
-
-    .socials {
-        padding-top: 260px;
-    }
 }
