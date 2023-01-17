@@ -4,7 +4,7 @@ $(function () {
     duration: 5000
   });
  
-  $('div.toshow').fadeIn(3500);
+  $('div.toshow').fadeIn(2500);
 
   $("nav li").on({
     click: function () {

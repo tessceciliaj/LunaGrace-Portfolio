@@ -33,19 +33,23 @@ nav {
 }
 
 ul {
+    background: transparent;
     display: flex;
     font-size: 1.2rem;
     justify-content: space-around;
     list-style: none;
     width: 40%;
+    z-index: 10;
 }
 
 li {
+    background: transparent;
     cursor: pointer;
     margin-top: 32px;
 }
 
 a {
+    background: transparent;
     text-decoration: none;
     color: var(--light-color);
 }
@@ -91,10 +95,10 @@ p {
 }
 
 .bar {
-    background-color: var(--accent-color);
+    background-color:var(--light-color);
     display: none;
-    height: 3px;
-    margin: 5px auto;
+    height: 2px;
+    margin: 7px auto;
     transition: all 0.3s ease-in-out;
     width: 25px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -127,6 +131,7 @@ p {
 }
 
 .logo {
+    background: transparent;
     height: 90px;
     position: fixed;
     transition: 0.7s;
@@ -182,14 +187,17 @@ h1:hover {
 }
 
 .socials {
+    background: transparent;
     color: var(--light-color);
     position: absolute;
     margin: auto;
     top: 93%;
     width: 100%;
+    z-index: 10;
 }
 
 .socials-icon {
+    background: transparent;
     height: 40px;
 }
 
@@ -303,12 +311,13 @@ section.slide .slider-container .slider-wrapper li .capa {
 
     li {
         font-size: 1rem;
-        margin: 8px 0;
+        margin: 0;
+        padding: 8px 0;
         left: 0; 
     }
     
     .top-layer-nav {
-        border-bottom:1px solid rgba(123, 0, 223, 0.5);
+        border-bottom:1px solid rgba(123, 0, 223, 1);
         padding-bottom: 16px;
     }
 
@@ -347,13 +356,15 @@ section.slide .slider-container .slider-wrapper li .capa {
     }
 
     .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
     }
 
     .hamburger {
+        background: transparent;
         position: relative;
         right: 5px;
         top: 5px;
+        z-index: 10;
     }
 
     .logo {

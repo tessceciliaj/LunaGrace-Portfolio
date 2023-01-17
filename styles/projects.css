@@ -118,7 +118,7 @@ border-radius: inherit;
     height: 100vh;
 }
 
-.container img {
+.card-content img {
     border-radius: 10px;
    height: 255px;
    width: 290px; 

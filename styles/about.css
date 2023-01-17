@@ -38,7 +38,6 @@ h2 {
 
 .skills-section {
     border-bottom: none;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 5% 10% 10%;
@@ -46,7 +45,7 @@ h2 {
 
 
 .carousel-container {
-    margin: 7%;
+    margin: 20%;
     position: relative;
     user-select: none;
 }
@@ -147,8 +146,8 @@ footer {
     }
 
     .carousel-container {
-        margin-top: 50%;
-        margin-bottom: 110%;
+        margin-top: 70%;
+        margin-bottom: 120%;
     }
 
    
