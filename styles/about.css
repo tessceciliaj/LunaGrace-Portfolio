@@ -140,6 +140,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+   
+    li {
+        background-color: var(--dark-color);
+    }
 
     .skills-div {
         margin-top: 10%;

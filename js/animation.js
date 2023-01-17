@@ -19,7 +19,7 @@ function setup() {
 	
 	flowfield = new Array(cols * rows);
 	
-	for ( let i = 0; i < 400; i++){
+	for ( let i = 0; i < 600; i++){
 	  particles[i] = new Particle();
 	}
 	background('#0d0c0f');
@@ -54,7 +54,7 @@ function Particle() {
   this.pos = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
 	this.acc = createVector(0, 0);
-	this.maxspeed = 2;
+	this.maxspeed = 3;
 	
 	this.prevPos = this.pos.copy();
 	
