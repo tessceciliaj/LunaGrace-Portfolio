@@ -12,8 +12,6 @@ body {
     justify-content: center;
 }
 
-
-
 p {
     color: var(--light-color);
     padding: 3%;
@@ -145,7 +143,7 @@ hr {
         margin-bottom: 180px;
     }
     .frontend-container {
-        height: 220vh;
+        height: 100%;
     }
 
     .front-projects {

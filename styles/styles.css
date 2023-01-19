@@ -236,7 +236,8 @@ h1:hover {
 
 section.slide {
     display: block;
-    height: 300px;
+    height: 400px;
+    padding-bottom: 8px;
     width: 100%;
 }
 

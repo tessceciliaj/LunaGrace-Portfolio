@@ -129,6 +129,10 @@ h1 {
     left: 100%;
 }
 
+.mobile {
+    display: none;
+}
+
 .footer {
     margin-top: 48px;
 }
@@ -191,5 +195,12 @@ h1 {
         height: 150px;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 
 }
