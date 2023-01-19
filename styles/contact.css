@@ -92,3 +92,7 @@ form button:hover {
     cursor: pointer;
     scale: 1.05;
 }
+
+.socials-footer {
+    text-align: center;
+}
