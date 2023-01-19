@@ -1,113 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luna Grace Portfolio</title>
-    <link rel="stylesheet" href="styles/qc.slider.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/typography.css">
-    <script src="js/jquery-3.6.2.min.js" defer></script>
-    <script src="js/p5.js" defer></script>
-    <script src="js/animation.js" defer></script>
-    <script src="js/portfolio.js" defer></script>
-    <script src="js/qcslider.jquery.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Grace Portfolio</title>
+  <link rel="stylesheet" href="styles/qc.slider.css"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/typography.css">
+  <script src="js/jquery-3.6.2.min.js" defer></script>
+  <script src="js/p5.js" defer></script>
+  <script src="js/animation.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+  <script src="js/qcslider.jquery.js" defer></script>
 </head>
+
 <body>
-    <section class="hero container" >
-        <nav>
-            <a href="index.html"><img class="logo logo-front show" src="img/luna_logo.png" alt="Luna Grace's Logo"/></a>
-            <ul class="nav-menu nav-menu-front">
-                <li class="top-layer-nav">About me
-                  <ul class="submenu">
-                    <li><a href="html/about.html">Introduction</a></li>
-                    <li><a href="html/about.html#journey">My Journey</a></li>
-                  </ul>
-                </li>
-                <li class="top-layer-nav">Projects
-                  <ul class="submenu">
-                    <li><a href="html/projects.html#creative">Creative</a></li>
-                    <li><a href="html/projects.html#frontend">Frontend</a></li>
-                  </ul>
-                </li>
-                <li class="top-layer-nav"><a href="html/contact.html" class="nav-link nav-link-front">Contact</a></li>
-            </ul>
-            <div class="hamburger hamburger-front">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-        </nav>
-        <div class="header-text toshow">
-          <h1>Luna Grace</h1>
-        <p class="my-titlte">Frontend Developer</p>
-        <a href="html/projects.html"><div class="btn">My Work</div></a> 
-       
-        </div> 
-        <div class="socials">
-          <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon" src="img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>
-          <a target="_blank" href="https://www.linkedin.com/in/therese-johansson-140a221a1/"><img class="socials-icon" src="img/LinkedIn-Icon-White-Logo.wine.png" alt=""></a>
-          <a target="_blank" href="https://github.com/Theresececilia"><img class="socials-icon" src="img/GitHub-Icon-White-Logo.wine.png" alt=""></a>
-        </div>
-    </section>
-    <section class="work-together-section container">
-        <div class="work-together-div hidden">
-            <h3>Lets work together</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, earum? Praesentium voluptatibus at quasi cumque placeat obcaecati perspiciatis laborum,
-                 consequuntur rem exercitationem eaque ratione, magni possimus corporis. Debitis, ea enim?</p>
-            <div class="btn">Collaborate</div>  
-        </div>
-       <img class="lines-image" src="img/purpleLines.png" alt="">
-    </section>
-    <section class="slide">
-        <div class="What-I-Like hidden">
-            <h3>What I Like</h3>
-            <p>Creating, both in logical and artistic ways. I use p5.js to turn code into art,
-                 AI-tools to extend my imagination &
-                 HTML, CSS and Javascript to build webpages.
-                 <br>Read about my journey in <a class="page-link" href="html/about.html">About me.</a>
-            </p>
-        
-        </div>
-          <div class="slider-container">
-            <ul class="slider-wrapper" id="slider">
-              <li class="slide-current">
-                <img src="img/galaxy.png"/>
-                <div class="capa">AI Galaxy</div>
-              </li>
-              <li class="slide">
-                <!-- Image -->
-                <img src="img/luna_logo.png" alt="Luna Grace Logo" />
-                <!-- Image Description -->
-                <div class="capa">Luna Grace Logo</div>
-              </li>
-              <li class="slide">
-                <!-- Image -->
-                <img src="img/rainy-p5JS.png" alt="P5.JS Squares" />
-                <!-- Image Description -->
-                <div class="capa">p5.js Rainy mountains</div>
-              </li>
-              <li class="slide">
-                <!-- Image -->
-                <img src="img/lines1.png" alt="P5.JS Lines" />
-                <!-- Image Description -->
-                <div class="capa">p5.js Lines</div>
-              </li>
-              <li class="slide">
-                <!-- Image -->
-                <img src="img/Picture-of-me.png" alt="Picture Of Me" />
-                <!-- Image Description -->
-                <div class="capa">Picture Of Me</div>
-              </li>
-            </ul>
-            <!-- Nav controls -->
-            <div class="drt-control control-left" id="lft-control"><</div>
-            <div class="drt-control control-right" id="rht-control">></div>
-            <ul class="slider-controls" id="slider-controls"></ul>
-            <!-- Progressbar -->
-            <div class="tempo-bar" id="barra"></div>
-          </div>
-        </section>
+  <section class="hero container">
+    <nav>
+      <a href="index.html"><img class="logo logo-front show" src="img/luna_logo.png" alt="Luna Grace's Logo" /></a>
+      <ul class="nav-menu nav-menu-front">
+        <li class="top-layer-nav">About me
+          <ul class="submenu">
+            <li><a href="html/about.html">Introduction</a></li>
+            <li><a href="html/about.html#journey">My Journey</a></li>
+          </ul>
+        </li>
+        <li class="top-layer-nav">Projects
+          <ul class="submenu">
+            <li><a href="html/projects.html#creative">Creative</a></li>
+            <li><a href="html/projects.html#frontend">Frontend</a></li>
+          </ul>
+        </li>
+        <li class="top-layer-nav"><a href="html/contact.html" class="nav-link nav-link-front">Contact</a></li>
+      </ul>
+      <div class="hamburger hamburger-front">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="header-text toshow">
+      <h1>Luna Grace</h1>
+      <p class="my-titlte">Frontend Developer</p>
+      <a href="html/projects.html">
+        <div class="btn">My Work</div>
+      </a>
+
+    </div>
+    <div class="socials">
+      <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon"
+          src="img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>
+      <a target="_blank" href="https://www.linkedin.com/in/therese-johansson-140a221a1/"><img class="socials-icon"
+          src="img/LinkedIn-Icon-White-Logo.wine.png" alt=""></a>
+      <a target="_blank" href="https://github.com/Theresececilia"><img class="socials-icon"
+          src="img/GitHub-Icon-White-Logo.wine.png" alt=""></a>
+    </div>
+  </section>
+  <section class="work-together-section container">
+    <div class="work-together-div hidden">
+      <h3>Lets work together</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, earum? Praesentium voluptatibus at quasi cumque
+        placeat obcaecati perspiciatis laborum,
+        consequuntur rem exercitationem eaque ratione, magni possimus corporis. Debitis, ea enim?</p>
+      <div class="btn">Collaborate</div>
+    </div>
+    <img class="lines-image" src="img/purpleLines.png" alt="">
+  </section>
+  <div class="What-I-Like hidden container">
+      <h3>What I Like</h3>
+      <p>Creating, both in logical and artistic ways. I use p5.js to turn code into art,
+        AI-tools to extend my imagination &
+        HTML, CSS and Javascript to build webpages.
+        <br>Read about my journey in <a class="page-link" href="html/about.html">About me.</a>
+      </p>
+    </div>
+  <section class="slide">
+    <div class="slider-container">
+      <ul class="slider-wrapper" id="slider">
+        <li class="slide-current">
+          <img src="img/galaxy.png" />
+          <div class="capa">AI Galaxy</div>
+        </li>
+        <li class="slide">
+          <!-- Image -->
+          <img src="img/luna_logo.png" alt="Luna Grace Logo" />
+          <!-- Image Description -->
+          <div class="capa">Luna Grace Logo</div>
+        </li>
+        <li class="slide">
+          <!-- Image -->
+          <img src="img/rainy-p5JS.png" alt="P5.JS Squares" />
+          <!-- Image Description -->
+          <div class="capa">p5.js Rainy mountains</div>
+        </li>
+        <li class="slide">
+          <!-- Image -->
+          <img src="img/lines1.png" alt="P5.JS Lines" />
+          <!-- Image Description -->
+          <div class="capa">p5.js Lines</div>
+        </li>
+        <li class="slide">
+          <!-- Image -->
+          <img src="img/Picture-of-me.png" alt="Picture Of Me" />
+          <!-- Image Description -->
+          <div class="capa">Picture Of Me</div>
+        </li>
+      </ul>
+      <!-- Nav controls -->
+      <div class="drt-control control-left" id="lft-control"><i class="fas fa-angle-left"></i></div>
+      <div class="drt-control control-right" id="rht-control"><i class="fas fa-angle-right"></i></div>
+      <ul class="slider-controls" id="slider-controls"></ul>
+      <!-- Progressbar -->
+      <div class="tempo-bar" id="barra"></div>
+    </div>
+  </section>
+  <section class="footer container">
+      <div class="upper-footer">
+        <img class="logo-footer" src="img/luna_logo.png" alt="Luna Grace's Logo" />
+        <h2>Luna Grace</h2>
+      </div>
+    <div class="under-footer">
+      <hr>
+    <div class="socials-footer">
+      <a target="_blank" href="https://www.instagram.com/lunagrace.tech/"><img class="socials-icon"
+          src="img/Instagram-Glyph-White-Logo.wine.png" alt=""></a>
+      <a target="_blank" href="https://www.linkedin.com/in/therese-johansson-140a221a1/"><img class="socials-icon"
+          src="img/LinkedIn-Icon-White-Logo.wine.png" alt=""></a>
+      <a target="_blank" href="https://github.com/Theresececilia"><img class="socials-icon"
+          src="img/GitHub-Icon-White-Logo.wine.png" alt=""></a>
+    </div>
+    <div class="contact-footer">
+      <p><i class="fa-light fa-envelope"></i>Therese@Lunagrace.tech</p>
+      <p><i class="fa-light fa-location-dot"></i>Stockholm, Sweden</p>
+    </div>
+  </div>
+  </section>
 </body>
+
 </html>
