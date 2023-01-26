@@ -1,7 +1,6 @@
 :root {
     --accent-color: rgb(97, 0, 223);
     --dark-color: #0d0c0f;
-    --medium-color: rgb(16, 14, 19);
     --light-color: rgb(244, 245, 245);
 }
 
@@ -17,8 +16,8 @@ h1 {
 }
 
 .headshot {
-    width: 30%;
     transition: 1s;
+    width: 30%;
 }
 
 .headshot:hover {
@@ -26,14 +25,14 @@ h1 {
 }
 
 .info-container {
-    width: 60%;
     margin-left: 5%;
+    width: 60%;
 }
 
 .skills-section {
+    align-items: center;
     border-bottom: none;
     justify-content: space-around;
-    align-items: center;
     padding: 5% 10% 10%;
 }
 
@@ -45,42 +44,42 @@ h1 {
 }
 
 .carousel-container .slide {
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    width: 320px;
-    height: 300px;
     border-radius: 10px;
-    overflow: hidden;
-    transition: all 300ms ease-in-out;
-    z-index: -1;
-    opacity: 0;
     background-color: var(--dark-color);
+    height: 300px;
+    left: 50%;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    z-index: -1;
 }
 
 .slide img {
     height: 100%;
-    width: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 .slide.active {
+    box-shadow: 0 0 105px -35px rgba(93, 0, 233, 0.75);
     opacity: 1;
     z-index: 99;
-    box-shadow: 0 0 105px -35px rgba(93, 0, 233, 0.75);
 }
 
 .slide.prev {
-    z-index: 2;
     opacity: 0.25;
     transform: translate(-125%, -50%);
+    z-index: 2;
 }
 
 .slide.next {
-    z-index: 2;
     opacity: 0.25;
     transform: translate(20%, -50%);
+    z-index: 2;
 }
 
 .carousel-container .button-container {
@@ -109,15 +108,15 @@ h1 {
 }
 
 .button-container .button:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
     background-color: rgba(0, 0, 0, 1);
     border-radius: 50%;
+    content: "";
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
     z-index: -99;
 }
 
@@ -138,7 +137,7 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-   
+
     li {
         background-color: var(--dark-color);
     }
@@ -152,7 +151,7 @@ h1 {
         margin-bottom: 120%;
     }
 
-   
+
     .headshot {
         width: 85%;
     }
@@ -177,9 +176,9 @@ h1 {
     }
 
     .slide.prev {
-        z-index: 2;
         opacity: 0.25;
         transform: translate(-50%, -125%);
+        z-index: 2;
     }
 
     .button-container .button:nth-child(1) {
@@ -188,11 +187,11 @@ h1 {
 
     .button-container .button:nth-child(2) {
         left: 87%;
-    } 
-    
+    }
+
     .carousel-container .slide {
-        width: 250px;
         height: 150px;
+        width: 250px;
     }
 
     .desktop {

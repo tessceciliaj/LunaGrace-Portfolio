@@ -7,8 +7,8 @@
 }
 
 body {
-    display: block;
     align-items: center;
+    display: block;
     justify-content: center;
 }
 
@@ -17,7 +17,6 @@ p {
     padding: 3%;
     z-index: 5;
 }
-
 
 h1 {
     color: var(--accent-color);
@@ -51,7 +50,7 @@ h3 {
     width: 100%;
 }
 
-#cards{
+#cards {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -60,13 +59,13 @@ h3 {
     width: calc(100% - 20px);
 }
 
-#cards:hover > .card > .card-border {
+#cards:hover>.card>.card-border {
     opacity: 1;
 }
 
 .card {
     background-color: var(--color-opacity);
-    border: 1px solid rgba(93, 0, 223, 0.15); 
+    border: 1px solid rgba(93, 0, 223, 0.15);
     border-radius: 10px;
     height: 260px;
     position: relative;
@@ -78,7 +77,7 @@ h3 {
 }
 
 .card::before,
-.card > .card-border {
+.card>.card-border {
     border-radius: inherit;
     content: "";
     height: 100%;
@@ -93,24 +92,24 @@ h3 {
 
 .card::before {
     background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(93, 0, 223, 0.3), transparent 40%);
+            rgba(93, 0, 223, 0.3), transparent 40%);
     z-index: 3;
 }
 
-.card > .card-border {
+.card>.card-border {
     background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
-    rgba(93, 0, 223, 0.15), transparent 40%);
+            rgba(93, 0, 223, 0.15), transparent 40%);
     z-index: 1;
 }
 
-.card > .card-content {
-background-color: var(--medium-color);
-border-radius: inherit;
- height: calc(100% - 2px);
- margin: 1px;
- position: relative;
- width: calc(100% - 2px);
- z-index: 2;
+.card>.card-content {
+    background-color: var(--medium-color);
+    border-radius: inherit;
+    height: calc(100% - 2px);
+    margin: 1px;
+    position: relative;
+    width: calc(100% - 2px);
+    z-index: 2;
 }
 
 .frontend-container {
@@ -119,8 +118,8 @@ border-radius: inherit;
 
 .card-content img {
     border-radius: 10px;
-   height: 255px;
-   width: 290px; 
+    height: 255px;
+    width: 290px;
 }
 
 hr {
@@ -128,8 +127,7 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
- 
-
+    
     h2 {
         margin: 5%;
     }
@@ -139,9 +137,10 @@ hr {
         margin-bottom: 20px;
     }
 
-    .card-frontend{
+    .card-frontend {
         margin-bottom: 180px;
     }
+
     .frontend-container {
         height: 100%;
     }
@@ -154,5 +153,8 @@ hr {
 
 @media only screen and (min-width: 1300px) {
 
+    .frontend-container {
+        height: 70vh;
+    }
 
 }

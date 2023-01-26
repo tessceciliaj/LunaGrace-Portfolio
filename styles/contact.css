@@ -42,8 +42,9 @@ form h3 {
     margin-bottom: 20px;
 }
 
-form input, form textarea{
-    background: transparent; 
+form input,
+form textarea {
+    background: transparent;
     border: none;
     border-bottom: 1px solid var(--color-opacity);
     color: var(--light-color);
@@ -58,14 +59,14 @@ form textarea:focus {
     border-color: var(--accent-color);
 }
 
-input:-webkit-autofill{
+input:-webkit-autofill {
     -webkit-text-fill-color: var(--light-color) !important;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px var(--dark-color) inset !important;
     border-bottom: 1px solid var(--accent-color);
 }
@@ -95,4 +96,15 @@ form button:hover {
 
 .socials-footer {
     text-align: center;
+}
+
+@media only screen and (max-width: 678px) {
+
+    .container {
+        height: 80vh;
+    }
+
+    form {
+        justify-content: center;
+    }
 }
