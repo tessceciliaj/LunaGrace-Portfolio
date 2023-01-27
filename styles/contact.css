@@ -16,10 +16,16 @@ li {
 }
 
 .container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: var(--dark-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
 }
@@ -27,7 +33,12 @@ li {
 form {
     background-color: var(--dark-color);
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 85vh;
     max-width: 600px;
@@ -84,11 +95,14 @@ form button {
     outline: none;
     padding: 8px;
     text-align: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     width: 100px;
 }
 
 form button:hover {
+    -webkit-box-shadow: 0 0 10px 0 var(--accent-color);
     box-shadow: 0 0 10px 0 var(--accent-color);
     cursor: pointer;
     scale: 1.05;
@@ -105,6 +119,21 @@ form button:hover {
     }
 
     form {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
+}
+
+@media only screen and (min-width: 1300px) {
+
+
+     .container {
+        height: 80vh;
+    }
+
+    form {
+        height: 50vh;
+    }
+
 }

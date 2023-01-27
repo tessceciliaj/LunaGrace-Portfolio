@@ -7,8 +7,12 @@
 }
 
 body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -24,13 +28,6 @@ h1 {
     padding-top: 15%;
 }
 
-.container h2 {
-    color: var(--accent-color);
-    font-family: futura;
-    font-size: 2rem;
-    margin-bottom: 2%;
-}
-
 h3 {
     background: transparent;
     font-family: futura;
@@ -39,19 +36,42 @@ h3 {
     padding-top: 10%;
 }
 
+.card-content h3{
+    transition: 0.5s;
+}
+
+
+.card-content h3:hover {
+    scale: 1.08;
+    
+}
+.container h2 {
+    color: var(--accent-color);
+    font-family: futura;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
 .container {
     padding: 5%;
 }
 
 .btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
 }
 
 #cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 8px;
     margin: auto;
@@ -85,18 +105,26 @@ h3 {
     opacity: 0;
     position: absolute;
     top: 0px;
+    -webkit-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
     transition: opacity 500ms;
     width: 100%;
     z-index: 2;
 }
 
 .card::before {
+    background: -o-radial-gradient(var(--mouse-x) var(--mouse-y),
+            800px circle,
+            rgba(93, 0, 223, 0.3), transparent 40%);
     background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
             rgba(93, 0, 223, 0.3), transparent 40%);
     z-index: 3;
 }
 
 .card>.card-border {
+    background: -o-radial-gradient(var(--mouse-x) var(--mouse-y),
+            400px circle,
+            rgba(93, 0, 223, 0.15), transparent 40%);
     background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
             rgba(93, 0, 223, 0.15), transparent 40%);
     z-index: 1;
@@ -126,10 +154,14 @@ hr {
     margin: 16px 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     
     h2 {
         margin: 5%;
+    }
+
+    .container h2 {
+        margin-bottom: 8%;
     }
 
     .card {
@@ -149,6 +181,20 @@ hr {
         position: relative;
         top: 12%;
     }
+
+    .card-content h3 {
+        text-decoration: underline;
+    }
+
+    .frontend-container #cards {
+        flex-direction: column;
+    }
+
+    #cards {
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 
 @media only screen and (min-width: 1300px) {
