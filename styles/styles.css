@@ -183,7 +183,7 @@ h1:hover {
     text-shadow: 0 0 5px var(--light-color);
 }
 
-.header-text p {
+.header-text p { /* you have this on line 178 */
     font-weight: 300;
     font-size: 1.7rem;
     padding: 0;
